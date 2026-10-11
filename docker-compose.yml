@@ -1,0 +1,11 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: coffee-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - coffee-mongo-data:/data/db
+
+volumes:
+  coffee-mongo-data:
